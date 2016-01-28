@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="app.css">
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
-<body style="background-color: #f8f8f8;">
+<script style="background-color: #f8f8f8;"></script>
 
   <!--<ul class="menu">-->
     <!--<li><a href="#/main">main</a></li>-->
@@ -27,7 +27,7 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
   <div ng-view></div>
-
+<div ng-include="'src/main/main.html'"></div>
   <!--<div>Angular seed app: v<span app-version></span></div>-->
 
 
@@ -39,10 +39,17 @@
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/tether/dist/js/tether.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
   <script src="app.js"></script>
-  <script src="views/login/login.js"></script>
-  <script src="views/main/main.js"></script>
-  <script src="views/view2/view2.js"></script>
+
+  <script src="src/login/login.js"></script>
+  <script src="src/main/main.js"></script>
+  <script src="src/view2/view2.js"></script>
+
+  <script src="src/directives/draggable.js"></script>
+
+  <script src="src/testdata/data01.js"></script>
+
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>

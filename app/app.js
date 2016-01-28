@@ -1,6 +1,6 @@
 'use strict';
 
-// Declare app level module which depends on views, and components
+// Declare app level module which depends on src, and components
 angular.module('myApp', [
     'ngRoute',
     'myApp.login',

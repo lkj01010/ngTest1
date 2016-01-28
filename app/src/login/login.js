@@ -3,10 +3,10 @@
  */
 'use strict';
 
-angular.module('myApp.login', ['ngRoute'])
+angular.module('myApp.login', ['ngRoute', 'drag'])
 .config(['$routeProvider', function($routeProvider) {
     $routeProvider.when('/login', {
-        templateUrl: 'views/login/login.html',
+        templateUrl: 'src/login/login.html',
         controller: 'LoginCtrl'
     });
 }])
