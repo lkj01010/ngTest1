@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.main', ['ngRoute'])
+angular.module('myApp.main', ['ui.router'])
 
 .config(['$routeProvider', function($routeProvider) {
     $routeProvider.when('/main', {
