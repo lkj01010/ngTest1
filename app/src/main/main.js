@@ -8,12 +8,12 @@ angular.module('myApp.main', ['ui.router'])
             $stateProvider
 
                 .state("main.summary", {
-                    url: "/main/summary",
+                    url: "/summary",
                     templateUrl: "src/main/summary/summary.html",
                     controller: "MainCtrl"
                 })
                 .state("main.gamestat", {
-                    url: "/main/gamestat",
+                    url: "/gamestat",
                     //templateUrl: "src/main/gamestat/gamestat.html",
                     controller: "MainCtrl",
                     views: {
@@ -31,7 +31,7 @@ angular.module('myApp.main', ['ui.router'])
 
 .controller('MainCtrl', ['$scope', function($scope) {
         var vm = $scope.vm = {};
-        vm.activeTab = 1;
+        //vm.activeTab = 1;
         //alert(vm.activeTab);
     }]);
 
