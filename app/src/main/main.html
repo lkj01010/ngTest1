@@ -23,21 +23,23 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-xs-3">
-            <div class="list-group">
-                <a href="#" class="list-group-item text-primary">
+            <div class="list-group" id="main-sidebar" ng-init="vm.activeTab=1">
+                <a ui-sref="main.summary" class="list-group-item" ng-class="{active: vm.activeTab==1}" ng-click="vm.activeTab=1">
                     总览
                 </a>
-                <a href="#" class="list-group-item">数据</a>
-                <a href="#" class="list-group-item">踢人</a>
-                <a href="#" class="list-group-item">公告编辑</a>
-                <a href="#" class="list-group-item">活跃统计</a>
+                <a ui-sref="main.gamestat" class="list-group-item" ng-class="{active: vm.activeTab==2}" ng-click="vm.activeTab=2">数据</a>
+                <a ui-sref="main.summary" class="list-group-item" ng-class="{active: vm.activeTab==3}" ng-click="vm.activeTab=3">踢人</a>
+                <a href="#" class="list-group-item" ng-class="{active: vm.activeTab==4}" ng-click="vm.activeTab=4">公告编辑</a>
+                <a href="#" class="list-group-item" ng-class="{active: vm.activeTab==5}" ng-click="vm.activeTab=5">活跃统计</a>
             </div>
+        </div>
+
+        <div class="col-xs-9">
+            <div ui-view=""></div>
         </div>
     </div>
 
-    <div class="row">
-
-    </div>
+    <div ui-view="uiview2"></div>
 </div>
 
 
