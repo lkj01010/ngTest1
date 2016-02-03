@@ -25,6 +25,11 @@ angular.module('myApp.main', ['ui.router'])
                         }
                     }
                 })
+                .state("main.kick", {
+                    url: "/kick",
+                    templateUrl: "src/main/kick/kick.html",
+                    controller: "KickCtrl"
+                })
         }
     ]
 )

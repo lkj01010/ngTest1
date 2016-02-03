@@ -1,18 +1,17 @@
 <div class="col-lg-6">
     <div class="input-group">
         <div class="input-group-btn">
-            <button type="button" class="btn btn-secondary">Action</button>
+            <button type="button" class="btn btn-secondary" ng-bind="vm.cmd"></button>
             <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="sr-only">Toggle Dropdown</span>
             </button>
             <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href ng-click='vm.selectCmd("踢人")'>踢人</a>
+                <a class="dropdown-item" href="" ng-click='vm.selectCmd("恢复")'>恢复</a>
                 <div role="separator" class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Separated link</a>
             </div>
         </div>
-        <input type="text" class="form-control" aria-label="Text input with segmented button dropdown">
+        <input type="text" class="form-control" aria-label="Text input with segmented button dropdown" placeholder="用户id">
     </div>
 </div>
