@@ -39,7 +39,7 @@
                 <a ui-sref="main.summary" class="list-group-item" ng-class="{active: $state.is('main.summary')}">总览</a>
                 <a ui-sref="main.gamestat" ui-sref-active="active" class="list-group-item">数据</a>
                 <a ui-sref="main.kick" ui-sref-active="active" class="list-group-item">踢人</a>
-                <a href="#" class="list-group-item" ng-class="{active: vm.activeTab==4}">公告编辑</a>
+                <a ui-sref="main.edit.edit01" class="list-group-item" ng-class="{active: $state.includes('main.edit')}">公告编辑</a>
                 <a href="#" class="list-group-item" ng-class="{active: vm.activeTab==5}">活跃统计</a>
             </div>
         </div>

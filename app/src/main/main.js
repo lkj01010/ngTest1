@@ -25,20 +25,47 @@ angular.module('myApp.main', ['ui.router'])
                         }
                     }
                 })
-                .state("main.kick", {
-                    url: "/kick",
-                    templateUrl: "src/main/kick/kick.html",
-                    controller: "KickCtrl"
+                //.state("main.kick", {
+                //    url: "/kick",
+                //    templateUrl: "src/main/kick/kick.html",
+                //    controller: "KickCtrl"
+                //})
+                .state("main.edit", {
+                    url: "/edit",
+                    abstract: true,
+                    templateUrl: "src/main/edit/edit.html",
+                    controller: "EditCtrl"
                 })
+
         }
     ]
 )
 
-.controller('MainCtrl', ['$scope', function($scope) {
+
+//    .config(
+//    ['$stateProvider',
+//        function($stateProvider) {
+//            $stateProvider
+//                .state("main.kick", {
+//                    url: "/kick",
+//                    templateUrl: "src/main/kick/kick.html",
+//                    controller: "KickCtrl"
+//                })
+//        }
+//    ]
+//)
+
+.controller('MainCtrl', ['$scope', '$rootScope', function($scope, $rootScope) {
         var vm = $scope.vm = {};
         //vm.activeTab = 1;
         //alert(vm.activeTab);
-    }]);
+
+        //$rootScope.$on("$routeChangeStart", function(event, next, current) {
+        //    $location.path('/main/edit01');
+        //});
+    }])
+
+
 
 
 //  http://www.tuicool.com/articles/uEB3Mj

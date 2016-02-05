@@ -18,6 +18,8 @@ angular.module('myApp', [
             // to active whenever 'contacts.list' or one of its decendents is active.
             $rootScope.$state = $state;
             $rootScope.$stateParams = $stateParams;
+
+
         }
     ]
 )
